@@ -7,7 +7,7 @@ const FilterSection = () => {
 
   // to get unique data of each fileds 
   const getUniqueData = (data, property) => {
-    let newval = data.map((curElem) => {
+    let newval = data?.map((curElem) => {
       return curElem[property];
     });
 
@@ -36,7 +36,7 @@ const FilterSection = () => {
         <h3>Category</h3>
         <div className='row d-flex flex-column'>
           {
-            categoryOnlyData.map((curElem, ind) => {
+            categoryOnlyData?.map((curElem, ind) => {
               return <div className='col py-1' key={ind}>
               <button
                 className='btn btn-light'

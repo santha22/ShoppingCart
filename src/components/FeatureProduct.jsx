@@ -14,7 +14,7 @@ const FeatureProduct = () => {
     <div className='container'>
       <div className="row">
         {
-            featureProducts.map((curEle) => {
+            featureProducts?.map((curEle) => {
                 return <div className="col" key={curEle.id}>
                     <CardItem key={curEle.id} {...curEle}/>
                 </div>

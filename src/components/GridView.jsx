@@ -8,7 +8,7 @@ const GridView = ({products}) => {
     <div className='container'>
         <div className="row">
             {
-                products.map((curEle) => {
+                products?.map((curEle) => {
 
                     return <div className='col-md-4' key={curEle.id}>
                                 <CardItem key={curEle.id} {...curEle} />

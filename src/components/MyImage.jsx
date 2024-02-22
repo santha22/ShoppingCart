@@ -9,7 +9,7 @@ const MyImage = ({ image = [{ url: "" }] }) => {
                 <div className='p-2'>
 
                     {
-                        image.map((curEle, index) => {
+                        image?.map((curEle, index) => {
                             return (
                                 <div className='p-1' key={index}>
                                     <img 

@@ -11,7 +11,7 @@ const cartReducer = (state, action) => {
         // console.log(existingProduct);
 
         if(existingProduct) {
-            let updatedProduct = state.cart.map((curElem) => {
+            let updatedProduct = state.cart?.map((curElem) => {
                 if(curElem.id === id){
                     let newAmount = curElem.amount + amount;
                     
@@ -53,7 +53,7 @@ const cartReducer = (state, action) => {
     }
 
     if(action.type === "SET_DECREMENT"){
-        let updatedProduct = state.cart.map((curElem) => {
+        let updatedProduct = state.cart?.map((curElem) => {
             if(curElem.id === action.payload) {
                 let decAmount = curElem.amount - 1;
 
@@ -77,7 +77,7 @@ const cartReducer = (state, action) => {
     }
 
     if(action.type === "SET_INCREMENT"){
-        let updatedProduct = state.cart.map((curElem) => {
+        let updatedProduct = state.cart?.map((curElem) => {
             if(curElem.id === action.payload) {
                 let incAmount = curElem.amount + 1;
 
