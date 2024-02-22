@@ -3,7 +3,7 @@ import { useFilterContext } from '../context/filter_context';
 import FormatPrice from '../Helper/FormatPrice';
 
 const FilterSection = () => {
-  const {filters: {text,  category, price, maxPrice, minPrice}, all_products, updateFilterValue, clearFilters} = useFilterContext();
+  const {filters: {text, price, maxPrice, minPrice}, all_products, updateFilterValue} = useFilterContext();
 
   // to get unique data of each fileds 
   const getUniqueData = (data, property) => {

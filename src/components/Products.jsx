@@ -5,7 +5,7 @@ import ProductList from './ProductList';
 import { useFilterContext } from '../context/filter_context';
 
 const Products = () => {
-  const { filter_products } = useFilterContext();
+  // const { filter_products } = useFilterContext();
   // console.log("filterproducts", filter_products);
   // console.log(filter_products[0]);
   return (
