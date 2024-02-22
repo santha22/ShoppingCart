@@ -2,12 +2,8 @@ import React from 'react'
 import FilterSection from './FilterSection';
 import Sort from './Sort';
 import ProductList from './ProductList';
-import { useFilterContext } from '../context/filter_context';
 
 const Products = () => {
-  // const { filter_products } = useFilterContext();
-  // console.log("filterproducts", filter_products);
-  // console.log(filter_products[0]);
   return (
     <div className='cotainer'>
       <div className="row">
