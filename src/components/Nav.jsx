@@ -11,7 +11,7 @@ const Nav = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ $zindexFixed: "1030" }}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">FashionStore</a>
+                    <a className="navbar-brand" href="/">ShopifyMart</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
